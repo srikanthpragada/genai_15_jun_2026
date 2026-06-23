@@ -1,8 +1,9 @@
 # streamlit run 2.gemini.py
 
-import streamlit as st
 from langchain.chat_models import init_chat_model
 model = init_chat_model("gemini-2.5-flash", model_provider="google_genai")
+
+import streamlit as st
 st.title("Get Answers from Gemini!")
 
 
