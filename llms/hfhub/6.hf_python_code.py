@@ -1,7 +1,7 @@
 from huggingface_hub import InferenceClient
 import keys
  
-model_id = "openai/gpt-oss-120b"
+model_id = "openai/gpt-oss-20b"
 client = InferenceClient(model=model_id, 
                          token= keys.HUGGINGFACE_KEY)
 

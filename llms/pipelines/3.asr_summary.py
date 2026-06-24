@@ -1,4 +1,8 @@
 from transformers import pipeline
+from transformers import logging
+
+logging.set_verbosity_error()
+
 
 # Load the pipeline with the Whisper model
 asr = pipeline("automatic-speech-recognition",
