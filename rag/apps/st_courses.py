@@ -44,7 +44,6 @@ Question:{question}
 """
 
 prompt  = PromptTemplate.from_template(prompt_template)
-
 retriever = db.as_retriever()
 
 
